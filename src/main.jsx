@@ -118,23 +118,26 @@ function App() {
           <div className="hero-visual">
             <div className="orb orb-one" />
             <div className="orb orb-two" />
-            <div className="profile-card">
+            <div className="profile-card profile-photo-card">
               <div className="card-top">
                 <span className="status"><span /> Available for opportunities</span>
                 <span className="code-icon">&lt;/&gt;</span>
               </div>
-              <div className="terminal">
-                <div><span className="pink">const</span> developer = {"{"}</div>
-                <div className="indent"><span className="blue">name:</span> <span className="green">'Tarun'</span>,</div>
-                <div className="indent"><span className="blue">focus:</span> <span className="green">'AI & ML'</span>,</div>
-                <div className="indent"><span className="blue">stack:</span> [<span className="green">'Python'</span>,</div>
-                <div className="indent2"><span className="green">'React'</span>, <span className="green">'Flask'</span>],</div>
-                <div className="indent"><span className="blue">mindset:</span> <span className="green">'Build & Learn'</span></div>
-                <div>{"}"}</div>
+              <div className="profile-photo-wrap">
+                <img src="/profile.jpg" alt="Tarun - AI/ML Developer" className="profile-photo" />
+                <div className="photo-badge">
+                  <BrainCircuit size={15} /> AI / ML
+                </div>
               </div>
-              <div className="card-bottom">
-                <span><BrainCircuit size={17}/> Machine Learning</span>
-                <span><Code2 size={17}/> Full Stack</span>
+              <div className="photo-caption">
+                <div>
+                  <strong>K. V. S. N. Tarun</strong>
+                  <span>Artificial Intelligence &amp; Machine Learning</span>
+                </div>
+                <div className="card-bottom photo-skills">
+                  <span><Code2 size={16}/> Full Stack</span>
+                  <span><BrainCircuit size={16}/> ML</span>
+                </div>
               </div>
             </div>
           </div>
